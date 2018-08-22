@@ -2,7 +2,7 @@
 
 /* CSS Document */
 #mommy{
-	border:2px solid blue;
+	border:2px solid #212121;
 	display: -webkit-box;
 	-webkit-box-orient:horizontal;
 	width:auto;
@@ -51,14 +51,14 @@
 }
 
 #kid1{
-	border: 2px solid red;
-	background: green;
+	border: 2px solid#757575;
+	background:#424242;
 	padding:10px;
 	-webkit-box-flex:1;
 }
 #kid2{
-	border: 2px solid red;
-	background: red;
+	border: 2px solid d;
+	background: #eeeeee;
 	padding:10px;
 	-webkit-box-flex:4;
 	
@@ -131,8 +131,8 @@ body{
 }
 
 #top_header{
-	background:yellow;
-	border:1px solid blue;
+	background:solid #212121;
+	border:1px solid #212121 ;
 	padding:20px;
 	display:-webkit-box;
 	-webkit-box-orient:horizontal;
