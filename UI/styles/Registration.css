@@ -1,0 +1,94 @@
+/* CSS Document */
+#mommy{
+	border:2px solid blue;
+	display: -webkit-box;
+	-webkit-box-orient:horizontal;
+	width:1000px;
+	-webkit-box-pack:center;
+	height:500px;
+	-webkit-box-align:stretch;
+	
+	-webkit-border-radius:25px;
+}
+#forms{
+	padding:10px;
+	margin:10px;
+	-webkit-transform:translate(0px,50px);
+	border:1px solid black;
+	text-align:center;
+}
+#kid1{
+	border: 2px solid red;
+	background: green;
+	padding:20px;
+	margin:10px;
+	-webkit-border-radius:25px;
+	-webkit-box-flex:1;
+}
+#kid2{
+	border: 2px solid red;
+	background: red;
+	padding:20px;
+	margin:10px;
+	-webkit-box-flex:1;
+	-webkit-border-radius:25px;
+}
+#login{
+	text-align:right;
+}
+
+*{
+	margin:0px;
+	padding:0px; 
+}
+h1{
+	font:bold 20px tahoma;
+}
+h2{
+	font:bold 14px tahoma;
+}
+#mylabels{
+
+}
+header,section,footer,aside,nav,hgroup,article{
+	display:block;
+}
+body{
+	width:100%;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	text-align:center;
+}
+#loginbutton{
+	padding:10px;
+	margin:10px;
+	-webkit-border-radius:5px;
+	-webkit-box-shadow:rgb(110,110,110) 10px 10px 10px;
+	cursor:pointer;
+	
+}
+
+#top_header{
+	background:yellow;
+	border:1px solid blue;
+	padding:20px;
+	-webkit-border-radius:25px;
+}
+#mylabels{
+	padding:10px;
+	margin:10px;
+	text-align:right;
+}
+#inputField{
+	padding:10px;
+	margin:10px;
+	text-align:left;
+}
+#big_wrapper{
+	border:1px solid black;
+	
+	-webkit-border-radius:25px;
+	width:1000px;
+	margin:20px auto;
+	text-align:left;
+	text-align:center;
