@@ -1,154 +1,122 @@
 /* CSS Document */
 
-/* CSS Document */
-#mommy{
-	border:2px solid #212121;
-	display: -webkit-box;
-	-webkit-box-orient:horizontal;
-	width:auto;
-	-webkit-box-pack:center;
-	height:auto;
-	-webkit-box-align:stretch;
-	
-	
-}
-#act{
-	text-align:center;
-	-webkit-box-flex:3;
-}
-#timeEntry{
-	text-align:center;
-	-webkit-box-flex:1;
-}
-#record{
-	text-align:center;
-	-webkit-box-flex:4;
-}
-#entrytab{
-	display:-webkit-box;
-	width:100%;
-}
-#kid2header{
-	display: -webkit-box;
-	-webkit-box-orient: horizontal;
-	padding:10px;
-}
-#EntryNo{
-	
-	
-	padding:10px;
-	
-}
-#sidebar{
-    display: -webkit-box;
-	-webkit-box-orient: horizontal;
-}
-#toleft{
-	-webkit-transform:translate(600px,0px);
-}
-#tocenter{
-	-webkit-transform:translate(200px,0px);
+.wrapper {
+	box-sizing: border-box;
+	margin: 20px;
 }
 
-#kid1{
-	border: 2px solid#757575;
-	background:#424242;
-	padding:10px;
-	-webkit-box-flex:1;
-}
-#kid2{
-	border: 2px solid d;
-	background: #eeeeee;
-	padding:10px;
-	-webkit-box-flex:4;
-	
-}
-#entrytab{
-	border:2px solid black;
-}
-#outputField{
-	border:1px solid #999999;
-}
-#myavatar{
- 	height:45px;
-	width:45px;
-	
-	-webkit-border-radius:50px;
-}
-#te{
-
-    float: center;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#myavatar1{
- 	height:45px;
-	width:45px;
-	float: left;
-	-webkit-border-radius:50px;
-}
-#online1{
-	-webkit-transform:translate(1100px,-40px);
-	
-}
-#online{
-	-webkit-transform:translate(-40px,-40px);
-	
-}
-#login{
-	text-align:right;
+
+/* Style the header */
+.header {
+	background-color: #666;
+	border-radius: 25px 25px 0px 0px;
+    padding: 30px;
+    text-align: center;
+    
+    color:black;
 }
 
-*{
-	margin:0px;
-	padding:0px; 
+/* Create two columns/boxes that floats next to each other */
+.nav {
+    float: left;
+    width: 10%;
+    height: 700px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
 }
-h1{
-	font:bold 20px tahoma;
-}
-h2{
-	font:bold 14px tahoma;
-}
-#mylabels{
 
+/* Style the list inside the menu */
+.nav ul {
+    list-style-type: none;
+	padding: 10px;
+	line-height: 2.0;
 }
-header,section,footer,aside,nav,hgroup,article{
-    display:block;
-    text-align: left;
-}
-body{
-	width:100%;
-	display:-webkit-box;
-	-webkit-box-pack:center;
-	text-align:center;
-}
-#loginbutton{
-	padding:10px;
-	margin:10px;
-	-webkit-border-radius:5px;
-	
-	cursor:pointer;
+
+.article {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    background-color: #f1f1f1;
+	height: 700px; 
 	
 }
 
-#top_header{
-	background:solid #212121;
-	border:1px solid #212121 ;
-	padding:20px;
-	display:-webkit-box;
-	-webkit-box-orient:horizontal;
+/* Clear floats after the columns */
+.section:after {
+    content: "";
+    display: flex;
+    clear: both;
 }
-#mylabels{
-	padding:10px;
-	margin:10px;
-	text-align:right;
+
+/* Style the footer */
+.footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
-#inputField{
-	padding:10px;
-	margin:10px;
-	text-align:left;
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    .nav, .article {
+        width: 100%;
+        height: auto;
+    }
 }
-#big_wrapper{
-	border:1px solid black;
-	width:100%;
-	text-align:center;
+.toright{
+	text-align: right;
+}
+.toleft{
+	text-align: left;
+}
+.tocenter{
+	text-align: center;
+}
+.rows{
+
+	border: #777;
 	
+}
+table {
+	height: 500px;
+	overflow-y: scroll;
+  }
+.Entries{
+	display: -webkit-flex;
+			height: 500px;
+			width: 960px;
+            overflow: auto;
+            -webkit-flex-flow: row wrap;
+}
+.col1{
+	width: 5%;
+}
+.col2{
+	width: 5%;
+}
+.col3{
+	width: 60%;
+}
+.col4{
+	width: 10%;
+}
+.articleheader{
+	font-style: oblique;
+	display: flex;
+	
+}
+
+.Entries tbody{
+	
+	
+	
+  }
+  .Entries thead{
+	  
+			
+			width: 80%;
+  }
