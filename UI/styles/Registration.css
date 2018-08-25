@@ -19,6 +19,7 @@
 	-webkit-box-shadow: 0 0 3px #212121;
 	box-shadow: 0 0 3px #212121;
 	text-align:center;
+	
 	-webkit-border-radius:25px;
 	
 }
@@ -29,6 +30,7 @@
 	margin:10px;
 	-webkit-border-radius:25px;
 	-webkit-box-flex:1;
+	
 }
 #kid2{
 	

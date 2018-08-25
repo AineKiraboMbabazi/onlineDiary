@@ -2,7 +2,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	<title>Untitled Document</title>
+	<title>View Entries</title>
 	<link rel="stylesheet" href="./styles/viewentries.css">
 </head>
 
@@ -10,40 +10,43 @@
 	<div class="wrapper">
 		<div class="header">
 				<h1 class="toleft">Mydiary</h1>
+				
 				<div class="toright">
-						<img src="" id="myavatar" alt="table image">
+						<img src="./assets/avatar3.png" id="myavatar" alt="table image">
 						</div>
+						<p><div class="toright">online</div></p>
 		</div>
 			  
 			  <div class="section">
+
 				<div class="nav">
 				  <ul>
-					<li><a href="#">Entries</a></li>
-					<li><a href="#">Notifications</a></li>
+					<li><a href="./viewentries.html">Entries</a></li>
+					<li><a href="./addentry.html"> Add Entry</a></li>
+					<li><a href="./setreminder.html">set reminder</a></li>
 					
 				  </ul>
 				</div>
 				
 				<div class="article">
-						<div class="articleheader" >
-                        
-								<p><div class="toleft">August 2018</div>
-								 <div class="tocenter">week23</div>
-								  <div class="toright">wednesday 22</div></p>
-							</div>
-				  <h1>Entries</h1>
-				  <p><div>
-						<form method="post" action="" id="EntryNo"> 
-						<label>Show</label>
-						<select type="" id="myselect">
-						<option value="" name="">10</option>
-						<option value="" name="">25</option>
-						<option value="" name="">50</option>
-						</select>
-						<label>Entries</label>
-						</form>
-						</div></p>
-				  <p><table class="Entries">
+						
+							<p>	<div>
+						<div ><h2>Entries</h2></div>
+								<div >
+									<form method="post" action="" id="EntryNo"> 
+									<label>Show</label>
+									<select type="" id="myselect">
+									<option value="" name="">10</option>
+									<option value="" name="">25</option>
+									<option value="" name="">50</option>
+									</select>
+									<label>Entries</label>
+									</form>
+									</div>
+							</div></p>
+				  
+				  
+				  <div><table class="Entries">
 						<thead>
 									<tr id="rows">
 										
@@ -109,7 +112,7 @@
 							</tr></p>
 					
 						</table>
-						</p>
+				  </div>
 				</div>
 			</div>
 			  

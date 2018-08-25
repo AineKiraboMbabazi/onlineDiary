@@ -1,0 +1,7 @@
+.content{
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    background-image: url("../assets/cover.jpg") no-repeat 0 -400px;
+    overflow: auto;
+}

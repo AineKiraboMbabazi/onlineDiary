@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta name="author" content="Ainekirabo Mbabazi">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>view Entry</title>
+	<link rel="stylesheet" href="./styles/viewentries.css">
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="headertitle">
+				<h1 class="toleft">Mydiary</h1>
+			</div>
+			<div class="profile">
+				<img src="./assets/avatar3.png" id="myavatar" alt="table image">
+
+				<div class="drop-down">
+						<ul>
+								<li><p>25 entries since creation</p></li>
+								<li><p>you have a birthday party to attend on 18/8/2018</p></li>
+								<li><button id="loginbutton">logout</p></button></li>
+			
+							</ul>
+				</div>
+			</div>
+	</header>
+
+<div class="wrapper">
+	
+	<aside>
+		<div class="container">
+			<nav>
+				<ul>
+					<li><a href="./viewentries.html">Entries</a></li>
+					<li><a href="./addentry.html"> Add Entry</a></li>
+					<li><a href="./setreminder.html">set reminder</a></li>
+
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<section>
+		<div class="article">
+
+
+			<div class="container">
+
+				
+					<h1>View Entry</h1>
+					<form method="post" >
+						<table class="container">
+
+							<tr>
+								<td><label id="mylabels">No</label></td>
+								<td><input type="date" name="createdOn" required="required" id="inputField" placeholder="22/8/2018"></td>
+                            </tr>
+                            <tr>
+                                    <td><label id="mylabels">Created on</label></td>
+                                    <td><input type="date" name="createdOn" required="required" id="inputField" placeholder="22/8/2018"></td>
+                                </tr>
+							<tr>
+								<td><label id="mylabels">Record</label></td>
+
+								<td><textarea rows="4" cols="100" id="inputField">hello there this is the online app. enjoy the experience.</textarea></td>
+
+							</tr>
+							<tr>
+								<td><button type="submit" name="login" value="login" id="loginbutton">Edit</button></td>
+							</tr>
+						</table>
+						
+					</form>
+				
+			</div>
+		</div>
+	</section>
+
+</div>
+
+
+</body>
+
+</html>
