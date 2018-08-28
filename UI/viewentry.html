@@ -6,7 +6,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<title>view Entry</title>
 	<link rel="stylesheet" href="./styles/viewentries.css">
-
+	<script src="visitpage.js">
+	
+		</script>
 </head>
 
 <body>
@@ -17,16 +19,14 @@
 				<h1 class="toleft">Mydiary</h1>
 			</div>
 			<div class="profile">
-				<img src="./assets/avatar3.png" id="myavatar" alt="table image">
-
-				<div class="drop-down">
-						<ul>
-								<li><p>25 entries since creation</p></li>
-								<li><p>you have a birthday party to attend on 18/8/2018</p></li>
-								<li><button id="loginbutton">logout</p></button></li>
+					<nav>
+							<ul>
+								<li><a href="./entries.html">Entries</a></li>
+								<li><a href="./addentry.html"> Add Entry</a></li>
+								<li><a href="./setreminder.html">set reminder</a></li>
 			
 							</ul>
-				</div>
+						</nav>
 			</div>
 	</header>
 
@@ -34,14 +34,15 @@
 	
 	<aside>
 		<div class="container">
-			<nav>
-				<ul>
-					<li><a href="./viewentries.html">Entries</a></li>
-					<li><a href="./addentry.html"> Add Entry</a></li>
-					<li><a href="./setreminder.html">set reminder</a></li>
-
-				</ul>
-			</nav>
+				<div class="card">
+						<img id="myavatar" src="./assets/avatar3.png" alt="John" style="width:100%">
+						<h1>Administrator</h1>
+						<p class="title">online</p>
+						<p>20 entries since creation</p>
+						
+						<p><button onclick=" logout()">logout</button></p>
+					  </div>
+			
 		</div>
 	</aside>
 
@@ -53,25 +54,25 @@
 
 				
 					<h1>View Entry</h1>
-					<form method="post" >
+					<form>
 						<table class="container">
 
 							<tr>
 								<td><label id="mylabels">No</label></td>
-								<td><input type="date" name="createdOn" required="required" id="inputField" placeholder="22/8/2018"></td>
+								<td><input type="date" name="createdOn" id="inputField" placeholder="22/8/2018" disabled="disabled"></td>
                             </tr>
                             <tr>
                                     <td><label id="mylabels">Created on</label></td>
-                                    <td><input type="date" name="createdOn" required="required" id="inputField" placeholder="22/8/2018"></td>
+                                    <td><input type="date" name="createdOn" id="inputField" placeholder="22/8/2018"  disabled="disabled"></td>
                                 </tr>
 							<tr>
 								<td><label id="mylabels">Record</label></td>
 
-								<td><textarea rows="4" cols="100" id="inputField">hello there this is the online app. enjoy the experience.</textarea></td>
+								<td><textarea  disabled="disabled"  id="inputField">hello there this is the online app. enjoy the experience.</textarea></td>
 
 							</tr>
 							<tr>
-								<td><button type="submit" name="login" value="login" id="loginbutton">Edit</button></td>
+								<td><button onclick=" EditPage()">Edit</button></td>
 							</tr>
 						</table>
 						
