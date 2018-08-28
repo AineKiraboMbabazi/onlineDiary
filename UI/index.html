@@ -1,11 +1,16 @@
 <!DOCTYPE html >
 
 <head>
+    
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	<title>Mydiary Registration</title>
-	<link rel="stylesheet" href="styles/Registration.css">
+	<title>Welcome page</title>
+    <link rel="stylesheet" href="styles/Registration.css">
+	
+	<link rel="stylesheet" href="./assets/cover.jpg">
 	<script src="visitpage.js">
-	</script>
+		
+		</script>
+    
 </head>
 
 <body>
@@ -13,43 +18,22 @@
 		<header id="top_header">
 			<h1>My Dairy</h1>
 		</header>
-		<section id="mommy">
-			<div id="kid1">
-					<h1>Signin</h1>
-				<form method="post" id="forms" name="forms" >
-					<p><label id="mylabels">Username</label>
-						<input type="text" name="Username" required="required" id="inputField" placeholder="mbabazi" required="required">
-					</p>
-					<p><label id="mylabels">Password</label>
-						<input type="text" name="Password" required="required" id="inputField">
-					</p>
-					<button type="submit" name="login" value="login" id="loginbutton" onclick="after_login()">login</button>
-				</form>
-			</div>
-			<div id="kid2">
-				<h1>Signup</h1>
-				<form method="post" name="signup" id="forms" onsubmit="return validateForm()">
-					<table>
-						<tr>
-							<td><label id="mylabels">Username</label></td>
-							<td><input type="text" name="Username" required="required" id="inputField" placeholder="mbabazi"></td>
-						</tr>
-						<tr>
-							<td><label id="mylabels">Password</label></td>
-							<td><input type="text" name="Password" required="required" id="inputField"></td>
-						</tr>
-						<tr>
-							<td><label id="mylabels">Confirm Password</label></td>
-							<td><input type="text" name="confirmPassword" required="required" id="inputField"></td>
-						</tr>
-					</table>
-					<button type="submit" name="login" value="submit" onclick="window.location.href='./addentry.html'">Register</button>
-				</form>
-			</div>
+		<div class="container">
+			<div><p><h2>Welcome to my Diary application.</h2></p></div>
+           
+                    <div class="Welcome">
+                            <p> Mydiary is a place where you record events, experiences and other personal things that interest you. You can write about whatever you like, free of outside judgment or criticism. It should be an extension of your mind: safe and free. A diary can be whatever you decide and should be a place where you can be honest. </p>
+							<p> Dairies can be therapeutic, productive and creative. If you have ever wanted a place to vent, reflect and grow, a diary is that place.</p>
+							<p>When talking to people, sometimes we feel as though we cannot be 100% honest. We worry about what people think, how they will react and feel. We worry about how people will perceive us after we share our thoughts and feelings with them. With a diary, you donot have to worry about anyone but yourself. Be as honest as you can possibly be. Your diary is for your eyes only. </p>
+							<p>Get started with this amazing experience by clicking the button below.</p>
+							
+								<button onclick="login()">Get Started</button>
+							
+                                </div>
+
+            </div>
 	</div>
 
-	</section>
-	</div>
 </body>
 
 </html>

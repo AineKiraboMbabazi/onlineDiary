@@ -9,7 +9,7 @@ function ViewPage(){
       
     }
     function login(){
-        window.location='./index.html';
+        window.location='./index1.html';
       
     }
     function after_login(){
