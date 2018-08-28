@@ -3,5 +3,8 @@
     margin: 20px;
     padding: 20px;
     background-image: url("../assets/cover.jpg") no-repeat 0 -400px;
+    background-image: url(../assets/cover.jpg) ;
+	background-position-y: 25%;
+	background-position-x: 25%;
     overflow: auto;
 }
