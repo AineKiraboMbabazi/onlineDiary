@@ -4,6 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<title>Mydiary Registration</title>
 	<link rel="stylesheet" href="styles/Registration.css">
+	<script src="visitpage.js">
+	</script>
 </head>
 
 <body>
@@ -14,19 +16,19 @@
 		<section id="mommy">
 			<div id="kid1">
 					<h1>Signin</h1>
-				<form method="post" id="forms">
+				<form method="post" id="forms" name="forms" >
 					<p><label id="mylabels">Username</label>
 						<input type="text" name="Username" required="required" id="inputField" placeholder="mbabazi" required="required">
 					</p>
 					<p><label id="mylabels">Password</label>
 						<input type="text" name="Password" required="required" id="inputField">
 					</p>
-					<button type="submit" name="login" value="login" id="loginbutton">login</button>
+					<button type="submit" name="login" value="login" id="loginbutton" onclick="after_login()">login</button>
 				</form>
 			</div>
 			<div id="kid2">
 				<h1>Signup</h1>
-				<form method="post" id="forms">
+				<form method="post" name="signup" id="forms" onsubmit="return validateForm()">
 					<table>
 						<tr>
 							<td><label id="mylabels">Username</label></td>
@@ -38,10 +40,10 @@
 						</tr>
 						<tr>
 							<td><label id="mylabels">Confirm Password</label></td>
-							<td><input type="password" name="Password" required="required" id="inputField"></td>
+							<td><input type="text" name="confirmPassword" required="required" id="inputField"></td>
 						</tr>
 					</table>
-					<button type="submit" name="login" value="login" id="loginbutton">Register</button>
+					<button type="submit" name="login" value="submit" onclick="window.location.href='./addentry.html'">Register</button>
 				</form>
 			</div>
 	</div>
