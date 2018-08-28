@@ -48,11 +48,12 @@ aside .container{
     padding:0px;
 	
 	
-	text-align:center;
+	text-align:left;
     
     
     
 }
+
 .container table{
     
     margin-left: 10px;
@@ -65,10 +66,18 @@ aside .container{
     
     
 }
- .profile{
+
+ .profile ul li{
     position: relative;
-    display: inline-block;
+    display: inline;
     text-decoration: none;
+    
+
+}
+.profile ul li a:hover {
+    background-color: #555;
+    color: white;
+    border: 2px #bbb ;
 }
 img:hover .drop-down{
     border: 10px solid black;
@@ -103,10 +112,7 @@ nav a{
     text-transform: uppercase;
     color: #000000;
 }
-nav li{
- display: block;
 
-}
 section .article{
     padding: 30px;
     
@@ -115,7 +121,7 @@ section .article{
 }
 textarea{
     padding:10px;
-	
+	width: 600px;
     text-align:left;
     overflow-y: scroll;
     height: 200px;
@@ -125,9 +131,11 @@ section .container form .display{
     float: none;
 }
     #myavatar{
-        height:45px;
-       width:45px;
-       -webkit-transform:translate(-90px,0px);
+        margin: 5px;
+        padding: 0px;
+       background-size: contain;
+       height: 150;
+       width: 150;
        -webkit-border-radius:50px;
     }
     #mylabels{
@@ -161,8 +169,10 @@ section .container form .display{
     body{
         float: none;
     }
-   
-    .wrapper aside .container{
+    li{
+        display: inline;
+    }
+    header .profile .container nav ul{
         float: none;
         display: inline;
     }
@@ -196,7 +206,7 @@ section .container form .display{
 
 table {
 	display: -webkit-flex;
-            width: 70%;
+            width: 80%;
             
             float: none;
             border :#000000;
@@ -231,7 +241,7 @@ th .col1{
  tbody{
 	overflow-x: scroll;
 	height: 500px;
-	width: 1027px;
+	width: 100%;
 	line-height: 2.0;
 	
 	
