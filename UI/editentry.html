@@ -6,45 +6,43 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<title>edit entry</title>
 	<link rel="stylesheet" href="./styles/viewentries.css">
-
+	<script src="visitpage.js">
+		</script>
 </head>
 
 <body>
-
-	<header>
-		<div class="container">
-			<div class="headertitle">
-				<h1 class="toleft">Mydiary</h1>
-			</div>
-			<div class="profile">
-				<img src="./assets/avatar3.png" id="myavatar" alt="table image">
-
-				<div class="drop-down">
-						<ul>
-								<li><p>25 entries since creation</p></li>
-								<li><p>you have a birthday party to attend on 18/8/2018</p></li>
-								<li><button id="loginbutton">logout</p></button></li>
+		<header>
+				<div class="container">
+					<div class="headertitle">
+						<h1 class="toleft">Mydiary</h1>
+					</div>
+					<div class="profile">
+							<nav>
+									<ul>
+										<li><a href="./entries.html">Entries</a></li>
+										<li><a href="./addentry.html"> Add Entry</a></li>
+										<li><a href="./setreminder.html">set reminder</a></li>
+					
+									</ul>
+								</nav>
+					</div>
+			</header>
+		
+		<div class="wrapper">
 			
-							</ul>
+			<aside>
+				<div class="container">
+						<div class="card">
+								<img src="./assets/avatar3.png" alt="John" style="width:100%">
+								<h1>Administrator</h1>
+								<p class="title">online</p>
+								<p>20 entries since creation</p>
+								
+								<p><button >logout</button></p>
+							  </div>
+					
 				</div>
-			</div>
-	</header>
-
-<div class="wrapper">
-	
-	<aside>
-		<div class="container">
-			<nav>
-				<ul>
-					<li><a href="./viewentries.html">Entries</a></li>
-					<li><a href="./addentry.html"> Add Entry</a></li>
-					<li><a href="./setreminder.html">set reminder</a></li>
-
-				</ul>
-			</nav>
-		</div>
-	</aside>
-
+			</aside>
 	<section>
 		<div class="article">
 
@@ -67,7 +65,7 @@
 
 							</tr>
 							<tr>
-								<td><button type="submit" name="login" value="login" id="loginbutton">Save</button></td>
+								<td><button onclick=" Save_alert()">Save</button></td>
 							</tr>
 						</table>
 						
