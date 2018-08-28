@@ -5,7 +5,7 @@ function ViewPage(){
         
       }
       function logout(){
-        window.location='./welcome.html';
+        window.location='./index.html';
       
     }
     function login(){
